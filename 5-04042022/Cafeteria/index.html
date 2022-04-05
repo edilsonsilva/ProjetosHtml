@@ -16,10 +16,12 @@
 -->
 
 <header>
+    <a href="#" onclick="abrir()">&#9776;</a>
     <h1>Cafeteria Brasil</h1>
 </header>
 
 <nav>
+    <a href="#" id="fechar" onclick="fechar()"> &times; </a>
     <ul>
         <li><a href="index.html">home</a></li>
         <li><a href="historia.html">história</a></li>
@@ -73,6 +75,17 @@
         </ul>
     </div>
 </footer>
+
+<script>
+    function abrir(){
+        document.getElementsByTagName("nav")[0].style.left="0px";
+    }
+
+    function fechar(){
+        document.getElementsByTagName("nav")[0].style.left="-150px"; 
+    }
+</script>
+
 
 
 </body>
